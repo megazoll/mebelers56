@@ -155,12 +155,14 @@
             <h2>Оставить заявку на замер</h2>
             <p>Заполните заявку прямо сейчас и наш специалист перезвонит Вам для согласования времени бесплатного выезда змерщика.</p>
         <div class="form">
-            <form method="POST" action="https://formspree.io/bidtiz@gmail.com">
+            <form id="contact-form" method="POST" action="https://formspree.io/mebeliers56@mail.ru">
                 <input type="text" name="name" placeholder="Введите имя">
                 <input type="text" name="phone" placeholder="Введите телефон">
                 <input type="email" name="email" placeholder="Введите e-mail">
                 <button class="btn" type="submit">Оставить заявку</button>
             </form>
+            <div id="success-form">Заявка принята</div>
+            <div id="error-form">Произошла ошибка</div>
         </div>
         </div>
     </section>
@@ -251,8 +253,8 @@
                 <div class="col-2">
                     <ul class="contact">
                         <li><i class="icon-envelope-o"></i> <a href="mailto:mebeliers56@mail.ru">mebeliers56@mail.ru</a></li>
-                        <li><i class="icon-instagram"></i> <a href="https://www.instagram.com/mebelers_56/"></a>mebelers_56</li>
-                        <li><i class="icon-vk"></i> <a href="https://vk.com/mebelers56">https://vk.com/mebelers56</a></li>
+                        <li><i class="icon-instagram"></i> <a href="https://www.instagram.com/mebelers_56/">mebelers_56</a></li>
+                        <li><i class="icon-vk"></i> <a href="https://vk.com/mebelers56">vk.com/mebelers56</a></li>
                     </ul>
                 </div>
             </div>
@@ -303,6 +305,28 @@
             }
             return false;
         });
+        // $('#contact-form').submit(function(){
+        //     var $form = $(this);
+        //     var url = 'https://script.google.com/macros/s/AKfycbxYiyZApHiS_UGVymySQln9-Dz0bkHHKc38IbPa8xXOnGRdpE8/exec';
+        //     var data = $form.serializeArray().reduce(function(a, x){
+        //         a[x.name] = x.value;
+        //         return a;
+        //     }, {});
+        //     $.ajax({
+        //         url: url,
+        //         method: "GET",
+        //         data: data,
+        //         dataType: "json",
+        //         success: function() {
+        //             $('#success-form').show();
+        //         },
+        //         error: function() {
+        //             ('#error-form').show();
+        //         }
+        //     })
+
+        //     return false;
+        // });
     });
 </script>
 

@@ -723,4 +723,14 @@ p{
     }
 }
 
+#success-form{
+    text-align: center;
+    color: green;
+    display: none;
+}
 
+#error-form{
+    text-align: center;
+    color: red;
+    display: none;
+}
